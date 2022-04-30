@@ -2,6 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import React, {useEffect, useRef} from 'react';
 import {Platform, Pressable, StyleSheet, View, Animated} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import logsStorage from '../storages/logsStorage';
 
 const FloatingWriteButton = ({hidden}) => {
   const navigation = useNavigation();

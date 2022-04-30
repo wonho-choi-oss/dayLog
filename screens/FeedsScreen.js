@@ -3,6 +3,7 @@ import {StyleSheet, View, TextInput} from 'react-native';
 import LogContext from '../contexts/LogContext';
 import FloatingWriteButton from '../component/FloatingWriteButton';
 import FeedList from '../component/FeedList';
+
 const FeedsScreen = () => {
   const {logs} = useContext(LogContext);
   const [hidden, setHidden] = useState(false);
