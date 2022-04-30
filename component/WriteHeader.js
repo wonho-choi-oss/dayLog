@@ -3,10 +3,10 @@ import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import TransparentCircleButton from './TransparentCircleButton';
 
-const WriteHeader = () => {
+const WriteHeader = ({onSave}) => {
   const navigation = useNavigation();
 
-  const onGoBack = () => {
+  const onGoBack = ({onSave}) => {
     navigation.pop();
   };
   return (
@@ -24,7 +24,11 @@ const WriteHeader = () => {
           color="#ef5350"
           hasMarginRight
         />
-        <TransparentCircleButton name="check" color="#009688" />
+        <TransparentCircleButton
+          name="check"
+          color="#009688"
+          onPress={onSave}
+        />
       </View>
     </View>
   );
